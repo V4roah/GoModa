@@ -1,0 +1,160 @@
+.container-fluid{
+    background: #755C5C;
+
+}
+.centrar{
+    text-align: center;
+}
+
+h2{
+    color: white;
+    margin-bottom: 10px;
+    text-decoration-line: none;
+    line-height:90%;
+    font-weight: bold;
+}
+
+.header{
+    position: sticky;
+    top: 0.5px;
+
+}
+
+.btn-navbar{
+    background: #755C5C;
+    border: none;
+    color: white;
+    margin: 0 2%;
+}
+.btn-navbar :hover{
+    background-color: white;
+    border: none;
+    color: black;
+    margin: 0 2%;
+}
+#btn-ingresar{
+    background: #755C5C;
+    margin: 0 13%;
+    border: none;
+    color: white;
+}
+
+#btn-buscar{
+    background: #755C5C;
+    border: none;
+    color: white;
+}
+#BarraInf{
+    background: #755C5C;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+}
+
+.footer{
+    margin-top: 0px;
+    margin-bottom: 0%;
+}
+
+.infor{
+    color:black;
+    margin-bottom: 10px;
+    text-decoration-line: none;
+    line-height:90%;
+    font-weight: bold;
+}
+
+.infor :hover{
+    font-weight: bold;   
+    text-decoration-line: underline;
+    vertical-align: Center;
+}
+
+.terminos{
+    margin: 0% 5%;
+    color:black;
+    font-weight: bold;
+    text-align: center;
+    text-decoration-line: none;
+}
+
+.contacto{
+    top: -10px;
+    border:5px solid rgb(82, 177, 255);
+    height: 110px;
+} 
+
+
+#album{
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-bottom: 20px;
+}
+.checkbox{
+    display: none;
+}
+#ca{
+    position: fixed;
+    height: 100%;
+    z-index: 10;
+}
+.usuario {
+    box-sizing: border-box;
+    width: 600px;
+    height: 724px;
+    z-index: 9;
+    top: -12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 270px;
+    background-color: #efcdcd;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+input#admin { 
+    visibility:hidden; position: absolute; top: -9999px; 
+}
+.checkbox:checked ~.usuario{
+    background: #efcdcd;
+    top: 0rem;
+}
+input#admin:checked ~ #sidebar {
+    width:300px;
+}
+input#admin:checked + label[for="abrir"], input#admin:checked ~ #contenido {
+    margin-left:300px;
+    transition: margin-left .4s;
+}
+input#admin:checked + label[for="abrir"] .cerrar { 
+    display:inline;
+}
+input#admin:checked + label[for="abrir"] .abrir {
+    display:none;
+}
+@media screen {
+    
+}
+.MenuAdmin {
+    width: 200px;
+    height: 400px;
+  }
+  
+  .MenuAdmin a {
+    background-color: #eee; 
+    color: black; 
+    display: block; 
+    padding: 12px; 
+    text-decoration: none; 
+  }
+  
+  .MenuAdmin a:hover {
+    background-color: #ccc; 
+  }
+  
+  .MenuAdmin a.active {
+    background-color: #04AA6D; 
+    color: white;
